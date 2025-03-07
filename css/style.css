@@ -1,0 +1,621 @@
+@font-face {
+	font-family: MontserratRegular;
+	src: url(../fonts/Montserrat-Regular.ttf);
+}
+
+@font-face {
+	font-family: MontserratMedium;
+	src: url(../fonts/Montserrat-Medium.ttf);
+}
+
+@font-face {
+	font-family: MontserratBold;
+	src: url(../fonts/Montserrat-Bold.ttf);
+}
+
+@font-face {
+	font-family: MontserratExtraBold;
+	src: url(../fonts/Montserrat-ExtraBold.ttf);
+}
+
+@font-face {
+	font-family: MontserratBlack;
+	src: url(../fonts/Montserrat-Black.ttf);
+}
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	background: transparent;
+	border: none;
+	font-family: "Roboto", sans-serif;
+	text-decoration: none !important;
+	list-style: none;
+	outline: none;
+	font: normal 16px/24px MontserratMedium, 'Sans-serif';
+	/* border: 1px saddlebrown solid !important; */
+	scrollbar-width: none;
+	-ms-overflow-style: none;
+}
+
+::-webkit-scrollbar {
+	display: none;
+}
+
+body {
+	overflow-x: hidden;
+}
+
+#mainContainer {
+	max-width: 1920px;
+	margin: 0 auto;
+	padding: 0;
+}
+
+section {
+	scroll-snap-align: start;
+	scroll-padding-top: 250px;
+	scroll-margin-top: 155px;
+}
+
+input,
+textarea,
+select {
+	width: 100%;
+	border-color: #ddd !important;
+	transition: 300ms ease-in;
+
+	&:focus {
+		border-color: #0f2962 !important;
+	}
+}
+
+img,
+video,
+svg {
+	max-width: 100%;
+	object-fit: cover;
+}
+
+.text-small {
+	font-size: 14px;
+	line-height: 16px;
+}
+
+.btn.btn-primary {
+	background: rgb(25, 0, 60) !important;
+	background: linear-gradient(45deg, rgba(25, 0, 60, 1) 0%, rgba(5, 81, 133, 1) 100%) !important;
+	border-color: transparent !important;
+	color: #fff !important;
+	position: relative;
+	overflow: hidden;
+	padding: 10px 20px;
+	min-width: 150px !important;
+	outline: 1px solid transparent !important;
+	outline-offset: -5px;
+	transition: outline 300ms ease-in;
+
+	&:hover {
+		outline: 1px solid #fff !important;
+		background: #1a1a1a !important;
+		border-radius: 0 !important;
+	}
+
+	&:focus {
+		outline: 1px solid #fff !important;
+		background: #1a1a1a !important;
+		border-radius: 0 !important;
+	}
+}
+
+.section-title {
+	color: #0f2962 !important;
+	font: Bold 42px/56px MontserratBold, 'Sans-serif' !important;
+	display: flex;
+	gap: 5px;
+	align-items: end;
+
+	span {
+		content: '';
+		width: 120px;
+		height: 3px;
+		background-color: #0f2962;
+		margin-bottom: 14px;
+	}
+
+	&::after {
+		content: '\f4b8';
+		font-family: 'Font Awesome 5 Free' !important;
+		font-size: 20px;
+		margin-bottom: -7px;
+	}
+
+}
+
+.section-sub-title {
+	color: #48aa48 !important;
+	font: bold 26px/32px MontserratRegular, 'Sans-serif' !important;
+}
+
+header {
+	background-color: #11225a !important;
+	transition: 300ms ease-in;
+
+	.navbar-brand img {
+		max-width: 100px;
+	}
+
+	button.btn {
+		padding: 8px 16px !important;
+		min-width: 100px !important;
+	}
+
+	li {
+		a {
+			color: #666 !important;
+			transition: 300ms ease-in;
+			font: normal 16px/24px MontserratMedium, 'Sans-serif' !important;
+
+			&.active {
+				color: #0f2962 !important;
+				font-weight: bold;
+			}
+
+			&:hover:not(.active) {
+				color: #0c336a !important;
+			}
+		}
+
+		&.has-sub-menu {
+			a:not(li ul li a)::after {
+				content: "\f078";
+				font-family: "Font Awesome 5 Free";
+				font-weight: 900;
+				font-size: 12px;
+				margin-left: 10px;
+				transition: 350ms ease-in !important;
+			}
+
+			.menuBoxHolder {
+				top: calc(100% + 27px);
+				display: none;
+				width: 175px;
+				transition: 350ms ease-in;
+
+				&::before {
+					content: "";
+					display: block;
+					width: 0;
+					height: 0;
+					top: -5px;
+					left: 10%;
+					right: 0;
+					position: absolute;
+					border-left: 5px solid transparent;
+					border-right: 5px solid transparent;
+					border-bottom: 5px solid #fff;
+				}
+
+				ul li a {
+					font: normal 15px/25px MontserratMedium, 'Sans-serif' !important;
+				}
+			}
+
+			&:focus-within {
+				a:not(li ul li a) {
+					color: red !important;
+
+					&::after {
+						content: "\f077";
+					}
+				}
+
+				.menuBoxHolder {
+					display: block;
+				}
+			}
+		}
+	}
+
+	.contact-bar {
+		display: block !important;
+		transition: 350ms 'ea';
+
+		.topbar {
+			a {
+				color: #666 !important;
+				transition: 300ms ease-in;
+
+				i {
+					color: #666 !important;
+					transition: 300ms ease-in;
+				}
+
+				&:hover {
+					color: #0c336a !important;
+
+					i {
+						color: #0c336a !important;
+					}
+				}
+
+			}
+		}
+	}
+
+	&.active {
+		.contact-bar {
+			display: none !important;
+		}
+	}
+}
+
+footer {
+	.nav-img {
+		max-height: 80px;
+	}
+
+	.imgGruop {
+		img {
+			max-width: 75px;
+		}
+	}
+
+	a {
+		color: red !important;
+		transition: 300ms ease-in;
+
+		&:hover,
+		&:focus {
+			color: #48aa48 !important;
+		}
+	}
+
+	.social {
+		a {
+			width: 40px;
+			height: 40px;
+			place-items: center;
+			transition: 300ms ease-in;
+			border-color: #ffaa11 !important;
+
+			i {
+				font-size: 16px;
+				color: #ffaa11;
+				transition: 300ms ease-in;
+			}
+
+			&:hover {
+				scale: 1.1;
+				border-color: red !important;
+
+				i {
+					color: red;
+				}
+			}
+		}
+	}
+}
+
+.offcanvas {
+	.btn-close:focus {
+		box-shadow: none !important;
+	}
+
+	img {
+		max-width: 100px !important;
+	}
+
+	li {
+		a {
+			padding: 8px 16px;
+			margin-bottom: 10px;
+			border-left: 2px solid transparent;
+			transition: 300ms ease-in;
+			color: #666 !important;
+
+			&:hover:not(.active) {
+				padding: 8px 20px;
+				border-left: 2px solid #0f2962;
+				color: #0f2962 !important;
+			}
+
+			&.active {
+				font-weight: bold !important;
+				padding: 8px 20px;
+				border-left: 2px solid #0c336a;
+				color: #0c336a !important;
+			}
+		}
+
+		ul {
+			display: none;
+			transition: 350ms ease-in !important;
+		}
+
+		&:focus-within {
+			color: red !important;
+
+			ul {
+				display: flex;
+			}
+		}
+	}
+}
+
+.scrollToTop {
+	content: " ";
+	width: 50px;
+	height: 50px;
+	background: #003366 !important;
+	position: fixed;
+	inset: auto 20px 20px auto;
+	display: none;
+	z-index: 99999;
+	place-items: center;
+	transition: 300ms ease-in;
+	box-shadow: 0 0 10px -5px rgba(255, 255, 255, 0.25);
+
+	svg {
+		fill: #fff !important;
+		transition: 300ms ease-in;
+	}
+
+	&:hover {
+		background: #fff !important;
+		border: 2px solid #003366 !important;
+
+		svg {
+			fill: #003366 !important;
+		}
+	}
+}
+
+#bannerArea {
+	.item {
+		min-height: 95vh;
+		background: transparent url(https://placehold.co/1920x860) no-repeat center center / cover;
+	}
+}
+
+#aboutArea {
+	h4 {
+		color: #11225a !important;
+		font: bold 20px/28px MontserratBold, 'Sans-serif' !important;
+	}
+
+	.backFace {
+		img {
+			border: 20px solid #fff;
+		}
+
+		&::after {
+			content: '';
+			position: absolute;
+			inset: 160px 0 auto auto;
+			width: 250px;
+			height: 250px;
+			z-index: 0;
+			background-image:
+				radial-gradient(red 25%, transparent 25%),
+				radial-gradient(red 25%, transparent 25%);
+			/* background-position: 0px 0px, 12px 12px; */
+			background-size: 25px 25px;
+			background-color: rgb(255, 51, 51, 0);
+		}
+	}
+}
+
+/* #chooseArea {} */
+
+#processArea {
+	.process {
+		.box {
+			min-width: 200px;
+			width: 100%;
+			place-items: center;
+
+			img {
+				max-width: 100px;
+				border: 2px solid red;
+			}
+
+			div {
+				span {
+					width: 30px;
+					height: 30px;
+					place-items: center;
+					color: red;
+					font: bold 14px/14px MontserratBold, 'Sans-serif';
+				}
+			}
+
+			&:not(:first-child)::before,
+			&:not(:last-child)::after {
+				content: '';
+				position: absolute;
+				width: 100px;
+				height: 2px;
+				background-color: red;
+			}
+
+			&::before {
+				inset: 50px 50% auto auto;
+				transform: translateX(-50%);
+			}
+
+			&::after {
+				inset: 50px auto auto 50%;
+				transform: translateX(50%);
+			}
+		}
+	}
+}
+
+#designArea {
+	.item {
+		.textBox {
+			svg {
+				top: -15px;
+			}
+
+			a {
+				color: #003366;
+				transition: 300ms ease-in;
+
+				i {
+					display: none;
+					transition: 500ms ease-in;
+				}
+
+				&:hover {
+					color: #0f2962;
+
+					i {
+						display: block;
+					}
+				}
+			}
+		}
+	}
+
+	.floatBtn {
+		background-color: #fff;
+		border: 2px solid #0f2962;
+		width: 50px;
+		height: 50px;
+		place-items: center;
+
+		&:hover {
+			background-color: #0f2962;
+			border-color: #fff;
+			color: #fff;
+		}
+	}
+}
+
+#galleryArea {
+	.item {
+		a {
+			place-items: center;
+			display: none !important;
+			transition: 500ms ease-in;
+
+			i {
+				font-size: 35px;
+			}
+		}
+
+		&:hover {
+			a {
+				display: grid !important;
+				color: #fff;
+				background-color: rgba(0, 0, 0, 0.25);
+			}
+		}
+	}
+}
+
+#contactArea {
+	background: transparent url(https://placehold.co/1920x680) no-repeat center center / cover;
+
+	>.container {
+		min-height: 680px;
+	}
+
+	&::before {
+		content: '';
+		inset: 0;
+		position: absolute;
+		width: 100%;
+		height: 100%;
+	}
+
+	h4 {
+		color: #11225a !important;
+		font: bold 20px/28px MontserratBold, 'Sans-serif' !important;
+	}
+
+	form {
+		backdrop-filter: blur(2px);
+		background: rgba(255, 255, 255, 0.5);
+
+		label {
+			display: none !important;
+		}
+	}
+}
+
+#reviewArea {
+	.card {
+		min-height: 380px;
+
+		img {
+			max-width: 125px;
+		}
+
+		i.active {
+			color: #ffaa11;
+		}
+	}
+}
+
+#blogArea {
+	.card {
+		min-height: 425px;
+
+		a {
+			color: #003366;
+			transition: 300ms ease-in;
+
+			i {
+				display: none;
+				transition: 500ms ease-in-out;
+			}
+
+			&:hover {
+				color: #0f2962;
+
+				i {
+					display: block;
+				}
+			}
+		}
+	}
+}
+
+#faqsArea {
+	.accordion-button {
+		font: bold 20px/28px MontserratBold, 'Sans-serif';
+		&::after {
+			content: "\f054";
+			font-family: 'Font Awesome 5 Free' !important;
+			transition: content .2sease-in-out;
+			background: transparent !important;
+		}
+
+		&:not(.collapsed) {
+			background-color: transparent !important;
+			color: #11225a !important;
+			font-weight: bold;
+			box-shadow: none !important;
+
+			&::after {
+				content: "\f078";
+				transform: rotate(0deg);
+				background: transparent !important;
+			}
+		}
+	}
+
+	.accordion-item {
+		border-color: #0c336a !important;
+	}
+
+	.accordion-button:focus {
+		border: none !important;
+		outline: none !important;
+		box-shadow: none !important;
+	}
+}
