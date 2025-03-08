@@ -71,6 +71,18 @@ select {
 	}
 }
 
+select {
+	-moz-appearance: none;
+	-webkit-appearance: none;
+	&:invalid {
+		color: gray;
+	}
+}
+
+select::-ms-expand {
+	display: none;
+}
+
 img,
 video,
 svg {
@@ -106,6 +118,15 @@ svg {
 		outline: 1px solid #fff !important;
 		background: #1a1a1a !important;
 		border-radius: 0 !important;
+	}
+}
+
+.nav-link {
+	&::before {
+		content: '\f08d';
+		font-family: 'Font Awesome 5 Free' !important;
+		margin-right: 5px;
+		font-size: 12px;
 	}
 }
 
@@ -155,7 +176,6 @@ header {
 		a {
 			color: #666 !important;
 			transition: 300ms ease-in;
-			font: normal 16px/24px MontserratMedium, 'Sans-serif' !important;
 
 			&.active {
 				color: #0f2962 !important;
@@ -178,9 +198,9 @@ header {
 			}
 
 			.menuBoxHolder {
-				top: calc(100% + 27px);
+				top: calc(100% + 30px);
 				display: none;
-				width: 175px;
+				width: 200px;
 				transition: 350ms ease-in;
 
 				&::before {
@@ -219,8 +239,7 @@ header {
 	}
 
 	.contact-bar {
-		display: block !important;
-		transition: 350ms 'ea';
+		transition: 350ms 'ease-in';
 
 		.topbar {
 			a {
@@ -295,6 +314,10 @@ footer {
 				}
 			}
 		}
+	}
+
+	.copyWrite {
+		font-size: .85rem;
 	}
 }
 
@@ -376,6 +399,14 @@ footer {
 	.item {
 		min-height: 95vh;
 		background: transparent url(https://placehold.co/1920x860) no-repeat center center / cover;
+	}
+}
+
+#offerArea {
+	.scroller {
+		img {
+			max-width: 250px;
+		}
 	}
 }
 
@@ -583,11 +614,16 @@ footer {
 			}
 		}
 	}
+
+	.btn {
+		max-width: 200px !important;
+	}
 }
 
 #faqsArea {
 	.accordion-button {
 		font: bold 20px/28px MontserratBold, 'Sans-serif';
+
 		&::after {
 			content: "\f054";
 			font-family: 'Font Awesome 5 Free' !important;

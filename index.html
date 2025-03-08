@@ -17,6 +17,7 @@
 	<link rel="stylesheet" href="./css/all.min.css" />
 	<link rel="stylesheet" href="./css/hover-min.css" />
 	<link rel="stylesheet" href="./css/animate.min.css" />
+	<link rel="stylesheet" href="./css/scroller.min.css" />
 	<link rel="stylesheet" href="./css/normalize.min.css" />
 	<link rel="stylesheet" href="./css/bootstrap.min.css" />
 	<link rel="stylesheet" href="./css/owl.carousel.min.css" />
@@ -58,11 +59,11 @@
 							<a href="javascript:void(0);" class="nav-link">Menu Item</a>
 							<div class="menuBoxHolder position-absolute start-100 translate-middle-x">
 								<ul class="d-flex flex-column gap-0 p-0 p-2 m-0 bg-white shadow-sm overflow-hidden rounded menuBox">
-									<li class="p-2 text-nowrap text-start border-bottom"><a href="#">Sub Menu Item 1</a></li>
-									<li class="p-2 text-nowrap text-start border-bottom"><a href="#">Sub Menu Item 1</a></li>
-									<li class="p-2 text-nowrap text-start border-bottom"><a href="#">Sub Menu Item 2</a></li>
-									<li class="p-2 text-nowrap text-start border-bottom"><a href="#">Sub Menu Item 2</a></li>
-									<li class="p-2 text-nowrap text-start border-bottom-0"><a href="#">Sub Menu Item 3</a></li>
+									<li class="p-2 text-nowrap text-start border-bottom"><a href="#" class="nav-link">Sub Menu Item 1</a></li>
+									<li class="p-2 text-nowrap text-start border-bottom"><a href="#" class="nav-link">Sub Menu Item 1</a></li>
+									<li class="p-2 text-nowrap text-start border-bottom"><a href="#" class="nav-link">Sub Menu Item 2</a></li>
+									<li class="p-2 text-nowrap text-start border-bottom"><a href="#" class="nav-link">Sub Menu Item 2</a></li>
+									<li class="p-2 text-nowrap text-start border-bottom-0"><a href="#" class="nav-link">Sub Menu Item 3</a></li>
 								</ul>
 							</div>
 						</li>
@@ -70,17 +71,17 @@
 							<a href="javascript:void(0);" class="nav-link">Menu Item</a>
 							<div class="menuBoxHolder position-absolute start-100 translate-middle-x">
 								<ul class="d-flex flex-column gap-0 p-0 p-2 m-0 bg-white shadow-sm overflow-hidden rounded menuBox">
-									<li class="p-2 text-nowrap text-start border-bottom"><a href="#">Sub Menu Item 1</a></li>
-									<li class="p-2 text-nowrap text-start border-bottom"><a href="#">Sub Menu Item 1</a></li>
-									<li class="p-2 text-nowrap text-start border-bottom"><a href="#">Sub Menu Item 2</a></li>
-									<li class="p-2 text-nowrap text-start border-bottom-0"><a href="#">Sub Menu Item 3</a></li>
+									<li class="p-2 text-nowrap text-start border-bottom"><a href="#" class="nav-link">Sub Menu Item 1</a></li>
+									<li class="p-2 text-nowrap text-start border-bottom"><a href="#" class="nav-link">Sub Menu Item 1</a></li>
+									<li class="p-2 text-nowrap text-start border-bottom"><a href="#" class="nav-link">Sub Menu Item 2</a></li>
+									<li class="p-2 text-nowrap text-start border-bottom-0"><a href="#" class="nav-link">Sub Menu Item 3</a></li>
 								</ul>
 							</div>
 						</li>
 						<li class="nav-item"><a href="#" class="nav-link">Menu Item</a></li>
 						<li class="nav-item"><a href="#" class="nav-link">Menu Item</a></li>
 						<li class="nav-item"><a href="#" class="nav-link">Contact Us</a></li>
-						<li><button type="button" class="btn btn-primary px-5" data-bs-toggle="modal" data-bs-target="#exampleModal"><span>Enquiry Now</span></button></li>
+						<li><button type="button" class="btn btn-primary px-5" data-bs-toggle="modal" data-bs-target="#EnquireModal"><span>Enquiry Now</span></button></li>
 					</ul>
 					<div class="col-8 col-lg-10 d-flex justify-content-end d-lg-none">
 						<button type="button" class="pe-2" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample"><i class="bi bi-grid-fill" style="font-size: 24px"></i></button>
@@ -112,6 +113,25 @@
 				</div>
 				<div class="item">
 					<div class="container"></div>
+				</div>
+			</div>
+		</section>
+		
+		<section class="offer-area container-fluid py-3 py-md-4 py-lg-5 bg-danger" id="offerArea">
+			<div class="container">
+				<div class="row row-gap-3 align-items-center">
+					<div class="col-12 col-md-4 col-lg-3">
+						<img src="https://placehold.co/350x150" alt="">
+					</div>
+					<div class="col-12 col-md-8 col-lg-9">
+							<div class="scroller" data-direction="left" data-speed="slow" data-animation-pause="false">
+								<div class="scroller__inner tag-list d-flex align-items-center">
+									<li class="fs-2"><img src="https://placehold.co/300x100" alt=""></li>
+									<li class="fs-3 lh-base">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nostrum soluta ratione temporibus vitae harum eaque <br /> praesentium pariatur iure animi recusandae quaerat ad culpa aut obcaecati, eveniet at minima. Sequi, mollitia.</li>
+									<li class="fs-2"><img src="https://placehold.co/300x100" alt=""></li>
+								</div>
+							</div>
+					</div>
 				</div>
 			</div>
 		</section>
@@ -165,31 +185,31 @@
 					<div class="box position-relative">
 						<div class="boxItem text-center">
 							<img src="https://placehold.co/100" alt="" class="rounded-circle">
-							<div class="text-center mt-3"><span class="border rounded-circle d-grid mx-auto">02</span><p class="mt-1 mb-0">Lorem ipsum dolor sit amet adipisicing.</p></div>
+							<div class="text-center mt-3"><span class="border border-2 rounded-circle d-grid mx-auto">02</span><p class="mt-1 mb-0">Lorem ipsum dolor sit amet adipisicing.</p></div>
 						</div>
 					</div>
 					<div class="box position-relative">
 						<div class="boxItem text-center">
 							<img src="https://placehold.co/100" alt="" class="rounded-circle">
-							<div class="text-center mt-3"><span class="border rounded-circle d-grid mx-auto">02</span><p class="mt-1 mb-0">Lorem ipsum dolor sit amet adipisicing.</p></div>
+							<div class="text-center mt-3"><span class="border border-2 rounded-circle d-grid mx-auto">02</span><p class="mt-1 mb-0">Lorem ipsum dolor sit amet adipisicing.</p></div>
 						</div>
 					</div>
 					<div class="box position-relative">
 						<div class="boxItem text-center">
 							<img src="https://placehold.co/100" alt="" class="rounded-circle">
-							<div class="text-center mt-3"><span class="border rounded-circle d-grid mx-auto">02</span><p class="mt-1 mb-0">Lorem ipsum dolor sit amet adipisicing.</p></div>
+							<div class="text-center mt-3"><span class="border border-2 rounded-circle d-grid mx-auto">02</span><p class="mt-1 mb-0">Lorem ipsum dolor sit amet adipisicing.</p></div>
 						</div>
 					</div>
 					<div class="box position-relative">
 						<div class="boxItem text-center">
 							<img src="https://placehold.co/100" alt="" class="rounded-circle">
-							<div class="text-center mt-3"><span class="border rounded-circle d-grid mx-auto">02</span><p class="mt-1 mb-0">Lorem ipsum dolor sit amet adipisicing.</p></div>
+							<div class="text-center mt-3"><span class="border border-2 rounded-circle d-grid mx-auto">02</span><p class="mt-1 mb-0">Lorem ipsum dolor sit amet adipisicing.</p></div>
 						</div>
 					</div>
 					<div class="box position-relative">
 						<div class="boxItem text-center">
 							<img src="https://placehold.co/100" alt="" class="rounded-circle">
-							<div class="text-center mt-3"><span class="border rounded-circle d-grid mx-auto">02</span><p class="mt-1 mb-0">Lorem ipsum dolor sit amet adipisicing.</p></div>
+							<div class="text-center mt-3"><span class="border border-2 rounded-circle d-grid mx-auto">02</span><p class="mt-1 mb-0">Lorem ipsum dolor sit amet adipisicing.</p></div>
 						</div>
 					</div>
 				</div>
@@ -285,7 +305,15 @@
 									</div>
 									<div class="col-12">
 										<label for="" class="mb-1">name</label>
-										<input type="text" name="" id="" placeholder="Service" class="border border-dark p-2 lh-base rounded-1">
+										<select name="" id="" class="border border-dark p-2 lh-base rounded-1" required>
+											<option value="" disabled selected hidden>Please Choose...</option>
+											<option value=""></option>
+											<option value=""></option>
+											<option value=""></option>
+											<option value=""></option>
+											<option value=""></option>
+											<option value=""></option>
+										</select>
 									</div>
 									<div class="col-12 mb-0">
 										<label for="" class="mb-1">name</label>
@@ -435,7 +463,7 @@
 				<h3 class="text-uppercase section-sub-title">Lorem ipsum dolor sit amet.</h3>
 				<h1 class="text-capitalize section-title mb-4">blog area <span></span></h1>
 				<div class="row row-gap-3">
-					<div class="col-12 col-md-6 col-lg-4">
+					<div class="col-12 col-md-6 col-lg-4 border border-danger">
 						<div class="card blog-card shadow rounded-3">
 							<div class="card-body p-0">
 								<img src="https://placehold.co/450x300" alt="">
@@ -447,7 +475,7 @@
 							</div>
 						</div>
 					</div>
-					<div class="col-12 col-md-6 col-lg-4">
+					<div class="col-12 col-md-6 col-lg-4 border border-danger">
 						<div class="card blog-card shadow rounded-3">
 							<div class="card-body p-0">
 								<img src="https://placehold.co/450x300" alt="">
@@ -459,7 +487,7 @@
 							</div>
 						</div>
 					</div>
-					<div class="col-12 col-md-6 col-lg-4">
+					<div class="col-12 col-md-6 col-lg-4 border border-danger">
 						<div class="card blog-card shadow rounded-3">
 							<div class="card-body p-0">
 								<img src="https://placehold.co/450x300" alt="">
@@ -471,6 +499,11 @@
 							</div>
 						</div>
 					</div>
+					<div class="col-12 col-md-6 col-lg-12 border border-danger">
+						<div class="pt-3 text-center">
+							<a href="#" class="d-flex align-items-center justify-content-center gap-2 border shadow mx-auto btn btn-primary">Read more<i class="fa-solid fa-arrow-right"></i></a>
+						</div>
+					</div>
 				</div>
 			</div>
 		</section>
@@ -479,12 +512,12 @@
 			<div class="container">
 				<h3 class="text-uppercase section-sub-title">Lorem ipsum dolor sit amet.</h3>
 				<h1 class="text-capitalize section-title mb-4">faqs area <span></span></h1>
-				<div class="row">
+				<div class="row align-items-center">
 					<div class="col-12 col-md-5 col-lg-4">
-						<img src="https://placehold.co/400x565" alt="">
+						<img src="https://placehold.co/400x585" alt="">
 					</div>
 					<div class="col-12 col-md-7 col-lg-8">
-						<div class="accordion border-0" id="accordionExample1">
+						<div class="accordion border-0 z-1" id="accordionExample1">
 							<div class="accordion-item border-0 border-bottom rounded-0">
 								<h2 class="accordion-header">
 									<button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse1One" aria-expanded="true" aria-controls="collapse1One">Accordion Item #1</button>
@@ -547,7 +580,7 @@
 			</div>
 		</section>
 		
-		<footer class="container-fluid py-3 py-md-4 py-lg-5 pb-lg-2 z-0 bg-secondary-subtle" id="footerArea">
+		<footer class="container-fluid py-3 py-md-4 py-lg-5 pb-lg-2 z-0 bg-body-tertiary" id="footerArea">
 			<div class="container">
 				<div class="row row-gap-2">
 					<div class="col-12 col-md-6">
@@ -571,7 +604,7 @@
 							<img src="https://placehold.co/500x300" alt="">
 						</div>
 						<h1 class="fs-3 fw-bold pb-1">Quick Links</h1>
-						<ul class="ps-0">
+						<ul class="ps-0 footerMenubar">
 							<li class="nav-item p-1 mb-1"><a href="#" class="nav-link">Terms & Conditions</a></li>
 							<li class="nav-item p-1 mb-1"><a href="#" class="nav-link">Cancellation Policy</a></li>
 							<li class="nav-item p-1 mb-1"><a href="#" class="nav-link">Privacy Policy</a></li>
@@ -580,7 +613,7 @@
 					</div>
 					<div class="col-6 col-md-6">
 						<h1 class="fs-3 fw-bold pb-2">More Links</h1>
-						<ul class="ps-0">
+						<ul class="ps-0 footerMenubar">
 							<li class="nav-item p-1 mb-1"><a href="#" class="nav-link">Home</a></li>
 							<li class="nav-item p-1 mb-1"><a href="#" class="nav-link">About Us</a></li>
 							<li class="nav-item p-1 mb-1"><a href="#" class="nav-link">Our Offerings</a></li>
@@ -621,17 +654,13 @@
 					</div>
 				</div>
 				<hr class="border border-danger mb-3 w-100">
-				<p class="text-center pb-2">Copyright © 2023-2025 Your Company Name - All Rights Reserved.</p>
+				<p class="text-center pb-2 copyWrite">Copyright © 2023-2025 Your Company Name - All Rights Reserved.</p>
 			</div>
 		</footer>
 
-		<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+		<div class="modal fade" id="EnquireModal" tabindex="-1" aria-labelledby="EnquireModalLabel" aria-hidden="true">
 			<div class="modal-dialog modal-lg modal-dialog-centered">
 				<div class="modal-content rounded-0">
-					<!-- <div class="modal-header">
-						<h1 class="modal-title fs-5" id="staticBackdropLabel">Modal title</h1>
-						<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-					</div> -->
 					<div class="modal-body p-3">
 						<form action="" class="p-3 border-2 border-dark" onsubmit="return false;">
 							<div class="row row-gap-2">
@@ -681,10 +710,26 @@
 							</div>
 						</form>
 					</div>
-					<!-- <div class="modal-footer">
-						<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-						<button type="button" class="btn btn-primary">Understood</button>
-					</div> -->
+				</div>
+			</div>
+		</div>
+
+		<div class="modal fade" id="OfferModal" tabindex="-1" aria-labelledby="OfferModalLabel" aria-hidden="true">
+			<div class="modal-dialog modal-xl modal-dialog-centered">
+				<div class="modal-content rounded-2">
+					<div class="modal-body p-3">
+						<div class="row align-items-center row-gap-2">
+							<div class="col-12 col-md-12 col-lg-7">
+								<img src="https://placehold.co/700x400" alt="" class="img-fluid rounded">
+							</div>
+							<div class="col-12 col-md-12 col-lg-5">
+								<h3 class="fw-bold fs-3 mb-2">Lorem ipsum dolor sit amet consectetur.</h3>
+								<p class="mb-2">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illum doloribus corrupti minus labore. Repudiandae iste eos veniam mollitia harum rerum fuga quo nulla in natus?</p>
+								<p class="mb-2">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sed aliquam atque id sapiente minus in consequuntur dolorem ullam molestiae est.</p>
+								<a href="#" class="btn btn-primary px-5">Know More</a>
+							</div>
+						</div>
+					</div>
 				</div>
 			</div>
 		</div>
@@ -726,6 +771,7 @@
 		</button>
 	</main>
 	<script src="./js/jquery.min.js"></script>
+	<script src="./js/scroller.min.js"></script>
 	<script src="./js/bootstrap.min.js"></script>
 	<script src="./js/owl.carousel.min.js"></script>
 	<script src="./js/aos.js"></script>

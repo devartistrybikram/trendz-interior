@@ -3,6 +3,11 @@
 	* {
 		font-size: 15px;
 	}
+	header {
+		.topbar {
+			display: none;
+		}
+	}
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */

@@ -1,4 +1,7 @@
 $(document).ready(function () {
+
+    $(".scroller").scroller();
+
     $('.owl-banner').owlCarousel({
         items: 1,
         loop: true,
