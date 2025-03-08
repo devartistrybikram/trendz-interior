@@ -4,13 +4,75 @@
 		font-size: 15px;
 	}
 
-	header {
-		.topbar {
-			display: none;
+	.text-small {
+		font-size: 12px;
+		line-height: 15px;
+	}
+
+	.section-title {
+		font: Bold 28px/40px MontserratBold, 'Sans-serif' !important;
+
+		span {
+			width: 80px;
+			margin-bottom: 12px;
+		}
+
+		&::after {
+			margin-bottom: 0;
+		}
+
+	}
+
+	.section-sub-title {
+		font: bold 16px/20px MontserratRegular, 'Sans-serif' !important;
+	}
+
+	#bannerArea {
+		.item {
+			height: 440px;
+		}
+	}
+
+	#aboutArea {
+		h4 {
+			font: bold 16px/20px MontserratBold, 'Sans-serif' !important;
+		}
+
+		.backFace {
+			img {
+				border: 20px solid #fff;
+			}
+
+			&::after {
+				display: none;
+			}
+		}
+	}
+
+	#contactArea {
+		h4 {
+			font: bold 16px/24px MontserratBold, 'Sans-serif' !important;
+		}
+	}
+
+	#reviewArea {
+		.card {
+			.card-body {
+
+				&::after,
+				&::before {
+					width: 65px;
+					height: 65px;
+				}
+			}
 		}
 	}
 
 	#blogArea {
+		.card {
+			min-height: 380px;
+		}
+
 		p {
 			max-width: 100%;
 		}
@@ -19,16 +81,118 @@
 			min-width: 100% !important;
 		}
 	}
+
+	#faqsArea {
+		.accordion-button {
+			font: bold 18px/24px MontserratBold, 'Sans-serif';
+		}
+
+		img {
+			max-height: 300px;
+			width: 100%;
+		}
+	}
+
+	#EnquireModal {
+		img {
+			width: 100%;
+			max-height: 300px;
+		}
+	}
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) {}
+@media only screen and (min-width: 600px) {
+	.text-small {
+		font-size: 13px;
+		line-height: 15px;
+	}
+
+	.section-title {
+		font: Bold 32px/40px MontserratBold, 'Sans-serif' !important;
+
+		span {
+			width: 95px;
+			margin-bottom: 12px;
+		}
+
+		&::after {
+			margin-bottom: -3px;
+		}
+
+	}
+
+	.section-sub-title {
+		font: bold 20px/28px MontserratRegular, 'Sans-serif' !important;
+	}
+
+		#bannerArea {
+			.item {
+				height: 520px;
+			}
+		}
+
+	#blogArea {
+		.card {
+			min-height: 380px;
+		}
+
+		p {
+			max-width: 100%;
+		}
+
+		.btn {
+			min-width: 100% !important;
+		}
+	}
+
+	#reviewArea {
+		.card {
+			.card-body {
+
+				&::after,
+				&::before {
+					width: 65px;
+					height: 65px;
+				}
+			}
+		}
+	}
+
+	#EnquireModal {
+		img {
+			width: 100%;
+			max-height: 300px;
+		}
+	}
+}
 
 /* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) {}
+@media only screen and (min-width: 768px) {
+	#bannerArea {
+			.item {
+				height: 520px;
+			}
+	
+			.text {
+				max-width: 500px;
+			}
+		}
+}
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
+	#bannerArea {
+		.item {
+			height: calc(100dvh - 155px);
+			max-height: 1024px !important;
+		}
+
+		.text {
+			max-width: 650px;
+		}
+	}
+
 	#blogArea {
 		p {
 			max-width: 85%;
@@ -42,6 +206,12 @@
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
+	#bannerArea {
+		.item {
+			min-height: 720px;
+		}
+	}
+
 	#footerArea {
 		.container {
 			.row {
@@ -58,4 +228,10 @@
 }
 
 /* Extra large devices (large desktops, 1400px and up) */
-@media only screen and (min-width: 1400px) {}
+@media only screen and (min-width: 1400px) {
+	#bannerArea {
+		.item {
+			min-height: 860px;
+		}
+	}
+}

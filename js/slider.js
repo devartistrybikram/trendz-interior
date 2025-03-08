@@ -36,7 +36,7 @@ $(document).ready(function () {
         }
     });
 
-    $('.owl-gallery').owlCarousel({
+    $('.owl-gallery, .owl-others').owlCarousel({
         items: 3,
         loop: true,
         margin: 20,

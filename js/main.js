@@ -23,10 +23,10 @@ $(document).ready(function () {
 	});
 
 	$(window).scroll(function () {
-		if ($(this).scrollTop()) {
-			$("header").addClass("active");
+		if ($(this).scrollTop() > 250) {
+			$('header').removeClass('position-relative').addClass('position-sticky active').css('top', '0px');
 		} else {
-			$("header").removeClass("active");
+			$('header').removeClass('position-sticky active').addClass('position-relative').css('top', '-200px');
 		}
 	});
 });
