@@ -74,6 +74,7 @@ select {
 select {
 	-moz-appearance: none;
 	-webkit-appearance: none;
+
 	&:invalid {
 		color: gray;
 	}
@@ -118,15 +119,6 @@ svg {
 		outline: 1px solid #fff !important;
 		background: #1a1a1a !important;
 		border-radius: 0 !important;
-	}
-}
-
-.nav-link {
-	&::before {
-		content: '\f08d';
-		font-family: 'Font Awesome 5 Free' !important;
-		margin-right: 5px;
-		font-size: 12px;
 	}
 }
 
@@ -340,7 +332,7 @@ footer {
 
 			&:hover:not(.active) {
 				padding: 8px 20px;
-				border-left: 2px solid #0f2962;
+				border-left: 2px solid #0f2962 !important;
 				color: #0f2962 !important;
 			}
 
@@ -397,7 +389,7 @@ footer {
 
 #bannerArea {
 	.item {
-		min-height: 95vh;
+		min-height: 900px;
 		background: transparent url(https://placehold.co/1920x860) no-repeat center center / cover;
 	}
 }
@@ -438,7 +430,11 @@ footer {
 	}
 }
 
-/* #chooseArea {} */
+#chooseArea {
+	.owl-carousel {
+		border: 1px solid red;
+	}
+}
 
 #processArea {
 	.process {
@@ -569,32 +565,88 @@ footer {
 	}
 
 	form {
-		backdrop-filter: blur(2px);
-		background: rgba(255, 255, 255, 0.5);
+		/* backdrop-filter: blur(2px); */
+		background: rgba(255, 255, 255, 1);
 
 		label {
 			display: none !important;
+		}
+	}
+
+	.col-12.col-lg-6 {
+		.boxes {
+			z-index: -1;
+			width: 180px;
+			height: 180px;
+			background-color: red;
+			outline: 5px solid red;
+			outline-offset: 10px;
+		}
+
+		&::after {
+			inset: 0 auto auto 0;
+			margin-left: 10px !important;
+		}
+
+		&::before {
+			inset: 100% auto auto 100%;
+			margin-right: 10px !important;
 		}
 	}
 }
 
 #reviewArea {
 	.card {
-		min-height: 380px;
+		background-color: #48aa48;
 
 		img {
 			max-width: 125px;
 		}
 
+		p {
+			overflow: hidden;
+			display: -webkit-box;
+			-webkit-line-clamp: 3;
+			line-clamp: 3;
+			-webkit-box-orient: vertical;
+		}
+
 		i.active {
 			color: #ffaa11;
+		}
+
+		.card-body {
+
+			&::after,
+			&::before {
+				content: " ";
+				position: absolute;
+				inset: 0;
+				width: 100%;
+				height: 100%;
+				opacity: .5;
+			}
+
+			&::after {
+				transform: scaleX(-1);
+				background: url('https://placehold.co/100x100') no-repeat 300px 150px / 100px !important;
+			}
+
+			&::before {
+				transform: scaleY(-1);
+				background: url('https://placehold.co/100x100') no-repeat 300px 0 / 100px !important;
+			}
 		}
 	}
 }
 
 #blogArea {
+	p {
+		max-width: 85%;
+	}
+
 	.card {
-		min-height: 425px;
+		min-height: 400px;
 
 		a {
 			color: #003366;

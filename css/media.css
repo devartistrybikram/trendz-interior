@@ -3,9 +3,20 @@
 	* {
 		font-size: 15px;
 	}
+
 	header {
 		.topbar {
 			display: none;
+		}
+	}
+
+	#blogArea {
+		p {
+			max-width: 100%;
+		}
+
+		.btn {
+			min-width: 100% !important;
 		}
 	}
 }
@@ -17,7 +28,17 @@
 @media only screen and (min-width: 768px) {}
 
 /* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px) {}
+@media only screen and (min-width: 992px) {
+	#blogArea {
+		p {
+			max-width: 85%;
+		}
+
+		.btn {
+			min-width: auto !important;
+		}
+	}
+}
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
@@ -27,6 +48,7 @@
 				.col-12.col-md-6 {
 					width: 30%;
 				}
+
 				.col-6.col-md-6 {
 					width: 20%;
 				}
