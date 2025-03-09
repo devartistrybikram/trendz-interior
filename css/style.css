@@ -443,6 +443,9 @@ footer {
 }
 
 #offerArea {
+	a {
+		color: #003366;
+	}
 	.scroller {
 		img {
 			max-width: 250px;
@@ -563,22 +566,10 @@ footer {
 }
 
 #galleryArea {
-	.item {
-		a {
-			place-items: center;
-			display: none !important;
-			transition: 500ms ease-in;
-
-			i {
-				font-size: 35px;
-			}
-		}
-
-		&:hover {
-			a {
-				display: grid !important;
-				color: #fff;
-				background-color: rgba(0, 0, 0, 0.25);
+	.scroller {
+		.scroller__inner {
+			li {
+				margin: 0 0 0 1px;
 			}
 		}
 	}
@@ -739,6 +730,9 @@ footer {
 
 	.accordion-item {
 		border-color: #0c336a !important;
+		&:last-child {
+			border: 0 !important;
+		}
 	}
 
 	.accordion-button:focus {
@@ -751,6 +745,7 @@ footer {
 /* ---------------------------------------------- */
 /* --------------- Other Page ------------------- */
 /* ---------------------------------------------- */
+
 #breadcrumbArea {
 	h5 {
 		a {
@@ -773,6 +768,9 @@ footer {
 	top: 90px;
 
 	.sidebar {
+		li:last-child {
+			border: 0 !important;
+		}
 		a {
 			color: red;
 			transition: 300ms ease-in;
@@ -808,13 +806,15 @@ footer {
 }
 
 #contentArea {
-	ul {
-		li{
-			list-style: decimal-leading-zero;
-			list-style-position: inside;
-			&::marker {
-				font-weight: bold;
-				font-size: 15px;
+	.features {
+		.col-12 {
+			> div {
+				border-width: 2px !important;
+				transition: 300ms ease-in-out;
+				&:hover {
+					border-color: #1a1a1a !important;
+					box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);;
+				}
 			}
 		}
 	}
