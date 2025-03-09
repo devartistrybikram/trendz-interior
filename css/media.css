@@ -99,6 +99,22 @@
 			max-height: 300px;
 		}
 	}
+
+	#contentArea {
+		.owl-dots {
+			height: 25px;
+
+			.owl-dot {
+				width: 10px;
+				height: 10px;
+
+				&.active {
+					width: 15px;
+					height: 15px;
+				}
+			}
+		}
+	}
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
@@ -126,11 +142,11 @@
 		font: bold 20px/28px MontserratRegular, 'Sans-serif' !important;
 	}
 
-		#bannerArea {
-			.item {
-				height: 520px;
-			}
+	#bannerArea {
+		.item {
+			height: 520px;
 		}
+	}
 
 	#blogArea {
 		.card {
@@ -170,14 +186,14 @@
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
 	#bannerArea {
-			.item {
-				height: 520px;
-			}
-	
-			.text {
-				max-width: 500px;
-			}
+		.item {
+			height: 520px;
 		}
+
+		.text {
+			max-width: 500px;
+		}
+	}
 }
 
 /* Large devices (laptops/desktops, 992px and up) */

@@ -446,6 +446,7 @@ footer {
 	a {
 		color: #003366;
 	}
+
 	.scroller {
 		img {
 			max-width: 250px;
@@ -730,6 +731,7 @@ footer {
 
 	.accordion-item {
 		border-color: #0c336a !important;
+
 		&:last-child {
 			border: 0 !important;
 		}
@@ -771,13 +773,16 @@ footer {
 		li:last-child {
 			border: 0 !important;
 		}
+
 		a {
 			color: red;
 			transition: 300ms ease-in;
+
 			&:hover {
 				color: green;
 			}
 		}
+
 		.social {
 			a {
 				width: 40px;
@@ -808,13 +813,52 @@ footer {
 #contentArea {
 	.features {
 		.col-12 {
-			> div {
+			>div {
 				border-width: 2px !important;
 				transition: 300ms ease-in-out;
+
 				&:hover {
 					border-color: #1a1a1a !important;
-					box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);;
+					box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+					;
 				}
+			}
+		}
+	}
+}
+
+/* ---------------------------------------------- */
+/* --------------- Other Page ------------------- */
+/* ---------------------------------------------- */
+
+#contentArea {
+	.carousel {
+		.col-12.col-lg-3 {
+			min-height: 92px;
+			ul li {
+				min-width: 150px;
+			}
+		}
+	}
+	.owl-dots {
+		position: absolute;
+		inset: auto auto 10px 50%;
+		transform: translate(-50%, -50%);
+		width: auto;
+		height: 25px;
+		display: flex;
+		gap: 10px;
+		align-items: center;
+		.owl-dot{
+			width: 10px;
+			height: 10px;
+			border-radius: 50%;
+			background-color: gray;
+			transition: 300ms ease;
+			&.active {
+				width: 15px;
+				height: 15px;
+				background-color: red;
 			}
 		}
 	}
