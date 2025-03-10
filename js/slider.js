@@ -103,6 +103,36 @@ $(document).ready(function () {
 
     // ----------------------------------------------------------------------------
 
+    $('.owl-features').owlCarousel({
+        items: 3,
+        loop: true,
+        margin: 15,
+        stage: 0,
+        nav: false,
+        dots: false,
+        autoplay: true,
+        autoplayTimeout: 3500,
+        responsive: {
+            0: {
+                items: 1
+            },
+            600: {
+                items: 2
+            },
+            900: {
+                items: 3
+            },
+            1200: {
+                items: 4
+            },
+            1400: {
+                items: 5
+            }
+        }
+    });
+
+    // ----------------------------------------------------------------------------
+
     $('.owl-others').owlCarousel({
         items: 3,
         loop: true,
@@ -143,7 +173,7 @@ $(document).ready(function () {
     $('.owl-products .owl-item').not('.cloned').each(function () {
         var src = $(this).find('img').attr('src');
         slidecount = slidecount + 1;
-        $('.owl-cust-dots').append('<li class="p-0"><img src="' + src +'" alt="slider image button '+ slidecount +'"/></li>');
+        $('.owl-cust-dots').append('<li class="p-0"><img src="' + src + '" alt="slider image button ' + slidecount + '"/></li>');
     });
 
     $('.owl-cust-dots').on('click', 'li', function (e) {
