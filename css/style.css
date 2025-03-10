@@ -151,6 +151,31 @@ svg {
 	font: bold 26px/32px MontserratRegular, 'Sans-serif' !important;
 }
 
+.social {
+	a {
+		width: 40px;
+		height: 40px;
+		place-items: center;
+		transition: 300ms ease-in;
+		border-color: #ffaa11 !important;
+
+		i {
+			font-size: 16px;
+			color: #ffaa11 !important;
+			transition: 300ms ease-in;
+		}
+
+		&:hover {
+			scale: 1.1;
+			border-color: red !important;
+
+			i {
+				color: red !important;
+			}
+		}
+	}
+}
+
 header {
 	background-color: #11225a !important;
 	transition: 300ms ease-in;
@@ -238,7 +263,7 @@ header {
 		transition: 350ms 'ease-in';
 
 		.topbar {
-			a {
+			a:not(.social a) {
 				color: #666 !important;
 				transition: 300ms ease-in;
 
@@ -259,25 +284,8 @@ header {
 
 			.social {
 				a {
-					place-items: center;
-					width: 35px;
-					height: 35px;
-					border: 2px solid red;
-					transition: 300ms ease-in;
-
-					i {
-						color: red !important;
-						font-size: 18px;
-					}
-
-					&:hover {
-						background: red;
-
-						i {
-							color: #fff !important;
-						}
-					}
-
+					width: 30px;
+					height: 30px;
 				}
 			}
 		}
@@ -308,31 +316,6 @@ footer {
 		&:hover,
 		&:focus {
 			color: #48aa48 !important;
-		}
-	}
-
-	.social {
-		a {
-			width: 40px;
-			height: 40px;
-			place-items: center;
-			transition: 300ms ease-in;
-			border-color: #ffaa11 !important;
-
-			i {
-				font-size: 16px;
-				color: #ffaa11;
-				transition: 300ms ease-in;
-			}
-
-			&:hover {
-				scale: 1.1;
-				border-color: red !important;
-
-				i {
-					color: red;
-				}
-			}
 		}
 	}
 
@@ -780,31 +763,6 @@ footer {
 
 			&:hover {
 				color: green;
-			}
-		}
-
-		.social {
-			a {
-				width: 40px;
-				height: 40px;
-				place-items: center;
-				transition: 300ms ease-in;
-				border-color: #ffaa11 !important;
-
-				i {
-					font-size: 16px;
-					color: #ffaa11;
-					transition: 300ms ease-in;
-				}
-
-				&:hover {
-					scale: 1.1;
-					border-color: red !important;
-
-					i {
-						color: red;
-					}
-				}
 			}
 		}
 	}
