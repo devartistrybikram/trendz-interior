@@ -125,6 +125,20 @@
 		-moz-column-gap: 10px;
 		column-gap: 10px;
 	}
+
+	#servecardArea {
+		.servecard {
+
+			&:nth-child(even),
+			&:nth-child(odd) {
+				.row {
+					.textBox {
+						width: 100%;
+					}
+				}
+			}
+		}
+	}
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
@@ -201,6 +215,29 @@
 		-moz-column-gap: 15px;
 		column-gap: 15px;
 	}
+
+	#servecardArea {
+		.servecard {
+
+			&:nth-child(even) {
+				.row {
+					.textBox {
+						position: absolute;
+						inset: auto 15px 15px auto;
+					}
+				}
+			}
+
+			&:nth-child(odd) {
+				.row {
+					.textBox {
+						position: absolute;
+						inset: auto auto 15px 15px;
+					}
+				}
+			}
+		}
+	}
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
@@ -247,6 +284,29 @@
 		-webkit-column-gap: 20px;
 		-moz-column-gap: 20px;
 		column-gap: 20px;
+	}
+
+	#servecardArea {
+		.servecard {
+			&:nth-child(even) {
+				.row {
+					.textBox {
+						inset: auto -40px 20px auto;
+					}
+				}
+			}
+
+			&:nth-child(odd) {
+				.row {
+					.textBox {
+						inset: auto auto 20px -40px;
+					}
+				}
+			}
+			&:last-child {
+				margin-bottom: 0 !important;
+			}
+		}
 	}
 }
 

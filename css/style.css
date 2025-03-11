@@ -537,13 +537,15 @@ footer {
 	.floatBtn {
 		background-color: #fff;
 		border: 2px solid #0f2962;
-		width: 50px;
-		height: 50px;
+		width: 45px;
+		height: 45px;
 		place-items: center;
+		opacity: .5;
+		transition: 300ms ease-out;
 
 		&:hover {
+			opacity: 1;
 			background-color: #0f2962;
-			border-color: #fff;
 			color: #fff;
 		}
 	}
@@ -866,10 +868,45 @@ footer {
 		}
 	}
 }
+
 #featureArea {
 	.card {
 		img {
 			max-width: 100px;
+		}
+	}
+}
+
+#servecardArea {
+	.servecard {
+		.row {
+			.textBox {
+				width: max-content;
+				min-width: 250px;
+				max-width: 450px;
+			}
+		}
+
+		&:nth-child(even) {
+			.row {
+				.textBox {
+					inset: auto -40px 25px auto;
+				}
+			}
+		}
+
+		&:nth-child(odd) {
+			.row {
+				.textBox {
+					inset: auto auto 25px -40px;
+				}
+			}
+		}
+
+		&:last-child {
+			.row {
+				margin-bottom: 0 !important;
+			}
 		}
 	}
 }

@@ -147,12 +147,14 @@ $(document).ready(function () {
                 items: 1
             },
             600: {
+                margin: 15,
                 items: 2
             },
             1200: {
                 items: 3
             },
-            1200: {
+            1400: {
+                margin: 20,
                 items: 4
             }
         }
@@ -181,28 +183,5 @@ $(document).ready(function () {
     });
 
     $('.owl-cust-dots').height($(".owl-products").height());
-
-    // dotcount = 1;
-
-    // $('.owl-dot').each(function () {
-    //     $(this).addClass('dotnumber' + dotcount);
-    //     $(this).attr('data-info', dotcount);
-    //     dotcount = dotcount + 1;
-    // });
-
-    // 
-
-    // 
-
-    // $('.owl-dot').each(function () {
-    //     grab = $(this).data('info');
-    //     slidegrab = $('.slidenumber' + grab + ' img').attr('src');
-    //     $(this).css("background-image", "url(" + slidegrab + ")");
-    // });
-
-    // amount = $('.owl-dot').length;
-    // gotowidth = 100 / amount;
-    // $('.owl-dot').css("height", gotowidth + "%");
-
 
 });
