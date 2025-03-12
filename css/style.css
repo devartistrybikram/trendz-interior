@@ -771,6 +771,12 @@ footer {
 }
 
 #contentArea {
+	form {
+		button {
+			margin-top: -7px !important;
+		}
+	}
+
 	.features {
 		.col-12 {
 			>div {
