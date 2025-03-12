@@ -4,11 +4,6 @@
 		font-size: 15px;
 	}
 
-	.text-small {
-		font-size: 12px;
-		line-height: 15px;
-	}
-
 	.section-title {
 		font: Bold 28px/40px MontserratBold, 'Sans-serif' !important;
 
@@ -143,11 +138,6 @@
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
-	.text-small {
-		font-size: 13px;
-		line-height: 15px;
-	}
-
 	.section-title {
 		font: Bold 32px/40px MontserratBold, 'Sans-serif' !important;
 
@@ -303,6 +293,7 @@
 					}
 				}
 			}
+
 			&:last-child {
 				margin-bottom: 0 !important;
 			}

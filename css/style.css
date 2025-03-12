@@ -92,8 +92,8 @@ svg {
 }
 
 .text-small {
-	font-size: 14px;
-	line-height: 16px;
+	font-size: .9rem;
+	line-height: 1rem;
 }
 
 .btn.btn-primary {
