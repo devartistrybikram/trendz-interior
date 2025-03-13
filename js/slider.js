@@ -38,12 +38,12 @@ $(document).ready(function () {
 
 
     $('.owl-review').owlCarousel({
-        items: 3,
+        items: 1.5,
         loop: true,
-        margin: 25,
-        stage: 0,
+        margin: 10,
         nav: false,
         dots: false,
+        center: true,
         autoplay: true,
         autoplayTimeout: 3500,
         responsive: {
@@ -51,10 +51,13 @@ $(document).ready(function () {
                 items: 1
             },
             600: {
-                items: 2
+                items: 1.25
+            },
+            900: {
+                items: 1.5
             },
             1200: {
-                items: 3
+                items: 1.75
             }
         }
     });
