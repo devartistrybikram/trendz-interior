@@ -745,7 +745,20 @@ footer {
 	}
 }
 
-#faqsArea {}
+#faqsArea {
+	.accordion-header {
+		display: flex;
+		align-items: center;
+		&::before {
+			content: '\f08d';
+			font-family: "Font Awesome 5 Free";
+			font-weight: 900;
+			font-size: 16px;
+			margin-left: 15px;
+			color: currentColor;
+		}
+	}
+}
 
 /* ---------------------------------------------- */
 /* --------------- Other Page ------------------- */
@@ -1064,7 +1077,7 @@ footer {
 
 #jobsArea {
 
-	
+
 	.jobdescription {
 		ul {
 			padding: 0 !important;
