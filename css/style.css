@@ -84,6 +84,15 @@ select::-ms-expand {
 	display: none;
 }
 
+ul {
+	padding: 0 !important;
+	margin: 0 !important;
+
+	li {
+		margin-bottom: 5px;
+	}
+}
+
 img,
 video,
 svg {
@@ -749,6 +758,7 @@ footer {
 	.accordion-header {
 		display: flex;
 		align-items: center;
+
 		&::before {
 			content: '\f08d';
 			font-family: "Font Awesome 5 Free";
@@ -1076,15 +1086,15 @@ footer {
 }
 
 #jobsArea {
-
-
 	.jobdescription {
 		ul {
 			padding: 0 !important;
 			margin: 0 !important;
+
 			li {
 				margin-bottom: 10px;
 				margin-left: 25px;
+
 				&::before {
 					content: '\f192';
 					font-family: "Font Awesome 5 Free";
@@ -1094,12 +1104,15 @@ footer {
 				}
 			}
 		}
+
 		p {
 			margin-bottom: 10px;
+
 			strong {
 				display: flex;
 				gap: 10px;
 				align-items: center;
+
 				&::before {
 					content: '\f0a1';
 					font-family: "Font Awesome 5 Free";
@@ -1109,14 +1122,17 @@ footer {
 			}
 		}
 	}
+
 	.jobshort {
 		ul {
 			padding: 0;
+
 			li {
 				margin-bottom: 15px;
 				display: flex;
 				gap: 15px;
 				align-items: center;
+
 				&::before {
 					content: '\f08d';
 					font-family: "Font Awesome 5 Free";
@@ -1125,6 +1141,16 @@ footer {
 					color: #48aa48;
 				}
 			}
+		}
+	}
+}
+
+#appliacesArea {
+	ul li {
+		margin: 0;
+		width: 50%;
+		p {
+			background-color: #f2f2f2;
 		}
 	}
 }
