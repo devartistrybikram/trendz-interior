@@ -147,31 +147,6 @@ svg {
 	}
 }
 
-.btn.btn-primary.link,
-.btn.btn-secondary.link {
-	span {
-		display: flex;
-		align-items: center;
-		gap: 10px;
-
-		&::after {
-			content: '\f062';
-			font-family: "Font Awesome 5 Free";
-			font-size: 16px;
-			font-weight: bold;
-			rotate: 45deg;
-			display: none;
-			transition: 300ms ease-in;
-		}
-	}
-
-	&:hover {
-		span::after {
-			display: block;
-		}
-	}
-}
-
 .btn.btn-secondary {
 	background: rgb(25, 0, 60) !important;
 	background: linear-gradient(45deg, rgba(25, 0, 60, 1) 0%, rgba(5, 81, 133, 1) 100%) !important;
@@ -195,6 +170,31 @@ svg {
 		outline: 1px solid #fff !important;
 		background: #1a1a1a !important;
 		border-radius: 0 !important;
+	}
+}
+
+.btn.btn-primary.link,
+.btn.btn-secondary.link {
+	span {
+		display: flex;
+		align-items: center;
+		gap: 10px;
+
+		&::after {
+			content: '\f062';
+			font-family: "Font Awesome 5 Free";
+			font-size: 16px;
+			font-weight: bold;
+			rotate: 45deg;
+			display: none;
+			transition: 300ms ease-in;
+		}
+	}
+
+	&:hover {
+		span::after {
+			display: block;
+		}
 	}
 }
 
@@ -572,6 +572,13 @@ footer {
 		color: #11225a !important;
 		font: bold 20px/28px MontserratBold, 'Sans-serif' !important;
 	}
+
+		.btn.play {
+			width: 65px;
+			height: 65px;
+			display: block;
+			padding: 0 !important;
+		}
 
 	.backFace {
 		img {
