@@ -100,7 +100,7 @@
 		<section class="banner-area container-fluid p-0" id="bannerArea">
 			<!-- <div class="container">
 				<h3 class="text-uppercase section-sub-title">Lorem ipsum dolor sit amet.</h3>
-				<h1 class="text-capitalize section-title mb-2 mb-md-3 mb=lg-4">banner area <span></span></h1>
+				<h1 class="text-capitalize section-title mb-2 mb-md-3">banner area <span></span></h1>
 			</div> -->
 			<div class="owl-carousel owl-theme owl-banner">
 				<div class="item">
@@ -134,14 +134,14 @@
 					<div class="col-12 col-md-4 col-lg-3 text-center">
 						<h1 class="fs-1 fw-bold">Happy New Year Offer</h1>
 					</div>
-					<div class="col-12 col-md-8 col-lg-9">
-							<div class="scroller" data-direction="left" data-speed="slow" data-animation-pause="false">
-								<a href="#" class="scroller__inner tag-list d-flex align-items-center">
-									<li class="fs-2"><img src="https://placehold.co/300x100" alt=""></li>
-									<li class="fs-3 lh-base">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt itaque nulla iusto, corrupti eligendi tenetur!<br/>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt itaque nulla iusto, corrupti eligendi tenetur!</li>
-								</a>
-							</div>
-					</div>
+					<button type="button" class="col-12 col-md-8 col-lg-9">
+						<div class="scroller" data-direction="left" data-speed="slow" data-animation-pause="false">
+							<a href="#" class="scroller__inner tag-list d-flex align-items-center">
+								<li class="fs-2"><img src="https://placehold.co/300x100" alt=""></li>
+								<li class="fs-3 lh-base">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt itaque nulla iusto, corrupti eligendi tenetur!<br/>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt itaque nulla iusto, corrupti eligendi tenetur!</li>
+							</a>
+						</div>
+					</button>
 				</div>
 			</div>
 		</section>
@@ -162,8 +162,8 @@
 						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro iste libero quod veniam, ducimus blanditiis omnis explicabo voluptates aspernatur, nobis quia cupiditate provident nihil ad consequuntur mollitia. Maxime, a quae?</p>
 						<h4>Lorem ipsum dolor sit.</h4>
 						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem iste eligendi nihil, amet adipisci iusto non nulla quo, nam voluptatem ullam quod natus totam sit accusamus ipsa. Excepturi repellendus soluta itaque autem esse rerum animi.</p>
-						<div class="d-flex mb-4 align-items-center gap-3"><button class="btn play px-5 rounded-circle shadow"><i class="fa-solid fa-play"></i></button><span class="text-capitalize">Watch intro video<br/>about us</span></div>
-						<a href="#" class="btn btn-primary px-5"><span>About Us</span></a>
+						<a href="#" class="btn btn-primary link px-5"><span>About Us</span></a>
+						<div class="d-flex mt-4 align-items-center gap-3"><button class="btn play px-5 rounded-circle shadow" data-bs-toggle="modal" data-bs-target="#videoModal"><i class="fa-solid fa-play"></i></button><span class="text-capitalize">Watch intro video<br/>about us</span></div>
 					</div>
 				</div>
 			</div>
@@ -172,7 +172,7 @@
 		<section class="choose-area container-fluid py-3 py-md-4 py-lg-5 bg-body-secondary" id="chooseArea">
 			<div class="container py-4">
 				<h3 class="text-uppercase section-sub-title">Lorem ipsum dolor sit amet.</h3>
-				<h1 class="text-capitalize section-title mb-2 mb-md-3 mb=lg-4">choose area <span></span></h1>
+				<h1 class="text-capitalize section-title mb-2 mb-md-3">choose area <span></span></h1>
 				<div class="row mt-3">
 					<div class="col-12 col-md-6 col-lg-4 bg-transparent d-flex align-items-center">
 						<div class="card border-0 p-3 p-md-4 text-center h-100 d-flex align-items-center" style="background: transparent url(https://placehold.co/500x700) no-repeat center center / cover;">
@@ -201,7 +201,7 @@
 		<section class="process-area container-fluid py-3 py-md-4 py-lg-5" id="processArea">
 			<div class="container py-4">
 				<h3 class="text-uppercase section-sub-title">Lorem ipsum dolor sit amet.</h3>
-				<h1 class="text-capitalize section-title mb-2 mb-md-3 mb=lg-4">process area <span></span></h1>
+				<h1 class="text-capitalize section-title mb-2 mb-md-3">process area <span></span></h1>
 				<div class="d-flex gap-3 align-items-center w-100 overflow-x-scroll process">
 					<div class="box position-relative">
 						<div class="boxItem text-center">
@@ -236,11 +236,18 @@
 				</div>
 			</div>
 		</section>
+		<section class="offercard-area container-fluid py-3 py-md-4 py-lg-5 bg-warning" id="offercardArea">
+			<div class="container py-4">
+				<button type="button" class="" data-bs-toggle="modal" data-bs-target="#OfferModal">
+					<img src="https://placehold.co/1280x480" alt="">
+				</button>
+			</div>
+		</section>
 
 		<section class="design-area container-fluid py-3 py-md-4 py-lg-5 bg-body-secondary" id="designArea">
 			<div class="container py-4">
 				<h3 class="text-uppercase section-sub-title">Lorem ipsum dolor sit amet.</h3>
-				<h1 class="text-capitalize section-title mb-2 mb-md-3 mb=lg-4">design area <span></span></h1>
+				<h1 class="text-capitalize section-title mb-2 mb-md-3">design area <span></span></h1>
 				<div class="position-relative">
 					<button type="button" class="position-absolute top-50 start-0 rounded-circle z-2 translate-middle d-grid floatBtn d-none d-lg-block"><i class="fa-solid fa-chevron-left"></i></button>
 					<button type="button" class="position-absolute top-50 start-100 rounded-circle z-2 translate-middle d-grid floatBtn d-none d-lg-block"><i class="fa-solid fa-chevron-right"></i></button>
@@ -267,7 +274,7 @@
 			<div class="container-fluid py-4">
 				<!-- <div class="container">
 					<h3 class="text-uppercase section-sub-title">Lorem ipsum dolor sit amet.</h3>
-					<h1 class="text-capitalize section-title mb-2 mb-md-3 mb=lg-4">gallery area <span></span></h1>
+					<h1 class="text-capitalize section-title mb-2 mb-md-3">gallery area <span></span></h1>
 				</div> -->
 				<div class="scroller" data-direction="left" data-speed="slow" data-animation-pause="false">
 					<div class="scroller__inner tag-list d-flex align-items-center">
@@ -365,7 +372,7 @@
 		<section class="review-area container-fluid py-3 py-md-4 py-lg-5" id="reviewArea">
 			<div class="container py-4">
 				<h3 class="text-uppercase section-sub-title">Lorem ipsum dolor sit amet.</h3>
-				<h1 class="text-capitalize section-title mb-2 mb-md-3 mb-lg-4">review area <span></span></h1>
+				<h1 class="text-capitalize section-title mb-2 mb-md-3">review area <span></span></h1>
 				<div class="owl-carousel owl-theme owl-review">
 					<div class="item text-center p-3 p-md-4 mb-4 rounded">
 						<img src="https://placehold.co/100x100" alt="" class="img-thumbnail rounded-circle mb-1">
@@ -413,7 +420,7 @@
 		<section class="blog-area container-fluid py-3 py-md-4 py-lg-5 bg-info-subtle" id="blogArea">
 			<div class="container py-4">
 				<h3 class="text-uppercase section-sub-title">Lorem ipsum dolor sit amet.</h3>
-				<h1 class="text-capitalize section-title mb-2 mb-md-3 mb=lg-4">blog area <span></span></h1>
+				<h1 class="text-capitalize section-title mb-2 mb-md-3">blog area <span></span></h1>
 				<div class="row align-items-center justify-content-center row-gap-3">
 					<div class="col-12 col-md-6 col-lg-4">
 						<div class="card blog-card shadow rounded-3">
@@ -459,7 +466,7 @@
 		<section class="faqs-area container-fluid py-3 py-md-4 py-lg-5" id="faqsArea">
 			<div class="container py-4">
 				<h3 class="text-uppercase section-sub-title">Lorem ipsum dolor sit amet.</h3>
-				<h1 class="text-capitalize section-title mb-2 mb-md-3 mb=lg-4">faqs area <span></span></h1>
+				<h1 class="text-capitalize section-title mb-2 mb-md-3">faqs area <span></span></h1>
 				<div class="row align-items-sta align-items-center">
 					<div class="col-12 col-md-5 col-lg-4 d-none d-lg-block">
 						<img src="https://placehold.co/400x585" alt="">
@@ -680,7 +687,7 @@
 			<div class="modal-dialog modal-xl modal-dialog-centered">
 				<div class="modal-content rounded-0">
 					<div class="modal-body p-3">
-						<iframe width="560" height="315" src="https://www.youtube.com/embed/a7cKMWsgGEM" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+						<iframe width="560" height="315" src="https://www.youtube.com/embed/a7cKMWsgGEM" title="YouTube video player" allow="" allowfullscreen></iframe>
 					</div>
 				</div>
 			</div>
