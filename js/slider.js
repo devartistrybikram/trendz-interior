@@ -48,7 +48,7 @@ $(document).ready(function () {
         autoplayTimeout: 3500,
         responsive: {
             0: {
-                items: 1
+                items: 1.1
             },
             600: {
                 items: 1.25
