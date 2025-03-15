@@ -23,6 +23,51 @@
 	src: url(../fonts/Montserrat-Black.ttf);
 }
 
+:root {
+	--platinum: #E4E5E7ff;
+	--antiflash-white: #E9EAECff;
+	--brunswick-green: #114B45ff;
+	--timberwolf: #D4D6D7ff;
+	--ash-gray: #9AA4A0ff;
+	--dark-green: #132C28ff;
+
+	/* --------------------------------------------------- */
+
+	--antiflash-white: #EAECEEff;
+	--brunswick-green: #043E35ff;
+	--platinum: #E4E5E7ff;
+	--gray: #7C7872ff;
+	--dark-green: #072725ff;
+	--timberwolf: #D4D6D7ff;
+
+	/* --------------------------------------------------- */
+
+	--platinum: #E7E8EAff;
+	--gray: #7C7872ff;
+	--dark-slate-gray: #2A3B35ff;
+	--platinum-2: #DDDFE0ff;
+	--brunswick-green: #114B45ff;
+	--brunswick-green-2: #043E35ff;
+
+	/* --------------------------------------------------- */
+
+	--dark-green: #132C28ff;
+	--brunswick-green: #114B45ff;
+	--dark-green-2: #04312Bff;
+	--antiflash-white: #EAECEEff;
+	--platinum: #DDDFE0ff;
+	--dark-slate-gray: #2A3B35ff;
+
+	/* --------------------------------------------------- */
+
+	--timberwolf: #D4D6D7ff;
+	--platinum: #E4E5E7ff;
+	--platinum-2: #DDDFE0ff;
+	--brunswick-green: #043E35ff;
+	--eerie-black: #202621ff;
+	--dark-green: #04312Bff;
+}
+
 * {
 	box-sizing: border-box;
 	margin: 0;
@@ -67,7 +112,7 @@ select {
 	transition: 300ms ease-in;
 
 	&:focus {
-		border-color: #0f2962 !important;
+		border-color: red !important;
 	}
 }
 
@@ -505,6 +550,7 @@ footer {
 			width: 100%;
 		}
 	}
+
 	iframe {
 		min-width: 100%;
 		height: 450px;
@@ -578,12 +624,12 @@ footer {
 		font: bold 20px/28px MontserratBold, 'Sans-serif' !important;
 	}
 
-		.btn.play {
-			width: 65px;
-			height: 65px;
-			display: block;
-			padding: 0 !important;
-		}
+	.btn.play {
+		width: 65px;
+		height: 65px;
+		display: block;
+		padding: 0 !important;
+	}
 
 	.backFace {
 		img {
@@ -1295,9 +1341,11 @@ footer {
 	ul {
 		li {
 			display: flex;
+			flex-wrap: wrap;
 			gap: 10px;
 			align-items: center;
 			margin-left: 15px;
+
 			&::before {
 				content: "\f10d";
 				font-family: "Font Awesome 5 Free";
