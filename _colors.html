@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Color Variables</title>
+	<link rel="stylesheet" href="./css/bootstrap.min.css" />
+	<style>
+		:root {
+			--platinum: #E4E5E7ff;
+			--antiflash-white: #E9EAECff;
+			--brunswick-green: #114B45ff;
+			--timberwolf: #D4D6D7ff;
+			--ash-gray: #9AA4A0ff;
+			--dark-green: #132C28ff;
+
+			/* --------------------------------------------------- */
+
+			--antiflash-white-2: #EAECEEff;
+			--brunswick-green-2: #043E35ff;
+			--platinum-2: #E4E5E7ff;
+			--gray: #7C7872ff;
+			--dark-green-2: #072725ff;
+			--timberwolf-2: #D4D6D7ff;
+
+			/* --------------------------------------------------- */
+
+			--platinum-3: #E7E8EAff;
+			--gray-2: #7C7872ff;
+			--dark-slate-gray: #2A3B35ff;
+			--platinum-4: #DDDFE0ff;
+			--brunswick-green-3: #114B45ff;
+			--brunswick-green-4: #043E35ff;
+
+			/* --------------------------------------------------- */
+
+			--dark-green-3: #132C28ff;
+			--brunswick-green-5: #114B45ff;
+			--dark-green-4: #04312Bff;
+			--antiflash-white-3: #EAECEEff;
+			--platinum-5: #DDDFE0ff;
+			--dark-slate-gray-2: #2A3B35ff;
+
+			/* --------------------------------------------------- */
+
+			--timberwolf-3: #D4D6D7ff;
+			--platinum-6: #E4E5E7ff;
+			--platinum-7: #DDDFE0ff;
+			--brunswick-green-6: #043E35ff;
+			--eerie-black: #202621ff;
+			--dark-green-5: #04312Bff;
+		}
+
+		.mainContainer {
+			padding: 20px;
+		}
+
+		.d-flex {
+			display: flex;
+			flex-wrap: wrap;
+			gap: 10px;
+			margin-bottom: 10px;
+			align-items: center;
+			justify-content: center;
+		}
+
+		.box {
+			width: 165px;
+			height: 100px;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			font-size: 14px;
+			color: white;
+			font-weight: bold;
+			text-align: center;
+			border-radius: 5px;
+			border: 1px solid #ccc;
+			padding: 5px;
+		}
+        
+		.box.light {
+			color: black;
+		}
+	</style>
+</head>
+
+<body>
+	<main class="mainContainer bg-white" id="mainContainer">
+		<div class="d-flex">
+			<div class="box shadow light" style="background: var(--platinum);">--platinum: #E4E5E7ff</div>
+			<div class="box shadow light" style="background: var(--antiflash-white);">--antiflash-white: #E9EAECff</div>
+			<div class="box shadow" style="background: var(--brunswick-green);">--brunswick-green: #114B45ff</div>
+			<div class="box shadow light" style="background: var(--timberwolf);">--timberwolf: #D4D6D7ff</div>
+			<div class="box shadow light" style="background: var(--ash-gray);">--ash-gray: #9AA4A0ff</div>
+			<div class="box shadow" style="background: var(--dark-green);">--dark-green: #132C28ff</div>
+		</div>
+		<hr>
+		<div class="d-flex">
+			<div class="box shadow light" style="background: var(--antiflash-white-2);">--antiflash-white-2: #EAECEEff</div>
+			<div class="box shadow" style="background: var(--brunswick-green-2);">--brunswick-green-2: #043E35ff</div>
+			<div class="box shadow light" style="background: var(--platinum-2);">--platinum-2: #E4E5E7ff</div>
+			<div class="box shadow" style="background: var(--gray);">--gray: #7C7872ff</div>
+			<div class="box shadow" style="background: var(--dark-green-2);">--dark-green-2: #072725ff</div>
+			<div class="box shadow light" style="background: var(--timberwolf-2);">--timberwolf-2: #D4D6D7ff</div>
+		</div>
+		<hr>
+		<div class="d-flex">
+			<div class="box shadow light" style="background: var(--platinum-3);">--platinum-3: #E7E8EAff</div>
+			<div class="box shadow" style="background: var(--gray-2);">--gray-2: #7C7872ff</div>
+			<div class="box shadow" style="background: var(--dark-slate-gray);">--dark-slate-gray: #2A3B35ff</div>
+			<div class="box shadow light" style="background: var(--platinum-4);">--platinum-4: #DDDFE0ff</div>
+			<div class="box shadow" style="background: var(--brunswick-green-3);">--brunswick-green-3: #114B45ff</div>
+			<div class="box shadow" style="background: var(--brunswick-green-4);">--brunswick-green-4: #043E35ff</div>
+		</div>
+		<hr>
+		<div class="d-flex">
+			<div class="box shadow" style="background: var(--dark-green-3);">--dark-green-3: #132C28ff</div>
+			<div class="box shadow" style="background: var(--brunswick-green-5);">--brunswick-green-5: #114B45ff</div>
+			<div class="box shadow" style="background: var(--dark-green-4);">--dark-green-4: #04312Bff</div>
+			<div class="box shadow light" style="background: var(--antiflash-white-3);">--antiflash-white-3: #EAECEEff</div>
+			<div class="box shadow light" style="background: var(--platinum-5);">--platinum-5: #DDDFE0ff</div>
+			<div class="box shadow" style="background: var(--dark-slate-gray-2);">--dark-slate-gray-2: #2A3B35ff</div>
+		</div>
+		<hr>
+		<div class="d-flex">
+			<div class="box shadow light" style="background: var(--timberwolf-3);">--timberwolf-3: #D4D6D7ff</div>
+			<div class="box shadow light" style="background: var(--platinum-6);">--platinum-6: #E4E5E7ff</div>
+			<div class="box shadow light" style="background: var(--platinum-7);">--platinum-7: #DDDFE0ff</div>
+			<div class="box shadow" style="background: var(--brunswick-green-6);">--brunswick-green-6: #043E35ff</div>
+			<div class="box shadow" style="background: var(--eerie-black);">--eerie-black: #202621ff</div>
+			<div class="box shadow" style="background: var(--dark-green-5);">--dark-green-5: #04312Bff</div>
+		</div>
+	</main>
+</body>
+
+</html>
