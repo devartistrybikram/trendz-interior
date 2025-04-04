@@ -353,7 +353,8 @@
 			</div>
 		</div>
 
-		<div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+		<div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample"
+			aria-labelledby="offcanvasExampleLabel">
 			<div class="offcanvas-header p-md-3 py-lg-3 p-xl-2 shadow">
 				<div class="py-2">
 					<img src="https://www.trendzinterior.in/assets/images/logo.png" alt="">
@@ -361,38 +362,12 @@
 				<button type="button" class="btn-close me-2" data-bs-dismiss="offcanvas" aria-label="Close"></button>
 			</div>
 			<div class="offcanvas-body">
-				<div class="menu-header-menu-container">
-					<ul id="menu-header-menu-1" class="nav flex-column gap-0 p-0 m-0">
-						<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home menu-item-59"><a href="./">Home</a></li>
-						<li class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-10 current_page_item menu-item-58"><a href="./about-us.html" aria-current="page">About Us</a></li>
-						<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-147"><a href="#">Our Offerings</a>
-							<ul class="sub-menu">
-								<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-170"><a href="./bed-rooms.html">Bed Rooms</a></li>
-								<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-172"><a href="./dining-rooms.html">Dining Rooms</a></li>
-								<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-174"><a href="./living-rooms.html">Living Rooms</a></li>
-								<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-175"><a href="./modular-kitchens.html">Modular Kitchens</a></li>
-								<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-176"><a href="./puja-mandirs.html">Puja Mandirs</a></li>
-								<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-171"><a href="./corporates.html">Corporates</a></li>
-								<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-173"><a href="./hotel-banglows.html">Hotel &#038; Banglows</a></li>
-								<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-177"><a href="./restaurants.html">Restaurants</a></li>
-							</ul>
-						</li>
-						<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-148"><a href="#">Other Designs</a>
-							<ul class="sub-menu">
-								<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-169"><a href="./wardrobes-interior.html">Wardrobes Interior</a></li>
-								<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-167"><a href="./tv-unit-interior.html">TV Unit Interior</a></li>
-								<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-166"><a href="./foyer-interior.html">Foyer Interior</a></li>
-								<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-163"><a href="./balcony-interior.html">Balcony Interior</a></li>
-								<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-168"><a href="./wall-decor-interior.html">Wall Decor Interior</a></li>
-								<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-165"><a href="./flooring-interior.html">Flooring Interior</a></li>
-								<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-164"><a href="./ceiling-interior.html">Ceiling Interior</a></li>
-							</ul>
-						</li>
-						<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-56"><a href="./portfolio.html">Portfolio</a></li>
-						<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-57"><a href="./appliances.html">Appliances</a></li>
-						<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-55"><a href="./contact-us.html">Contact Us</a></li>
-					</ul>
-				</div>
+				<?php
+				wp_nav_menu(array(
+					'theme_location' => 'header_menu',
+					'menu_class' => 'nav flex-column gap-0 p-0 m-0',
+				));
+				?>
 			</div>
 		</div>
 
@@ -410,6 +385,9 @@
 	<script src="./js/aos.js"></script>
 	<script src="./js/main.js"></script>
 	<script src="./js/slider.js"></script>
+	
+	<?php wp_footer(); ?>
+
 </div>
 </body>
 

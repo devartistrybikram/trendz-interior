@@ -166,12 +166,6 @@ svg {
 	line-height: 1rem;
 }
 
-.header-menu .menu-item.menu-item-has-children {
-	display: flex;
-	align-items: center;
-	gap: 5px;
-}
-
 .btn.btn-primary {
 	background: rgb(25, 0, 60) !important;
 	background: linear-gradient(45deg, rgba(25, 0, 60, 1) 0%, rgba(5, 81, 133, 1) 100%) !important;
@@ -389,6 +383,12 @@ svg {
 	}
 }
 
+.header-menu .menu-item.menu-item-has-children {
+	display: flex;
+	align-items: center;
+	gap: 5px;
+}
+
 #headerArea {
 	transition: 300ms ease-in;
 
@@ -452,7 +452,7 @@ svg {
 				position: absolute;
 				left: 100%;
 				transform: translateX(-50%);
-				top: calc(100% + 45px);
+				top: calc(100% + 35px);
 				background-color: #fff;
 				display: none;
 				flex-direction: column;
