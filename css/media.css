@@ -346,6 +346,12 @@
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
+	header {
+		button.btn {
+			display: inline;
+		}
+	}
+
 	#bannerArea {
 		.item {
 			min-height: 720px;
